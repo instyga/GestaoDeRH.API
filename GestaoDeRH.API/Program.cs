@@ -10,6 +10,8 @@ using GestaoDeRH.Dominio.Interfaces;
 using GestaoDeRH.Infra.BancoDeDados;
 using GestaoDeRH.Infra.Repositorios;
 using Microsoft.EntityFrameworkCore;
+using FluentValidation;
+using FluentValidation.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -36,6 +38,11 @@ builder.Services.AddScoped<INovoCandidato, NovoCandidato>();
 builder.Services.AddScoped<IAprovarCandidato, AprovarCandidato>();
 
 builder.Services.AddControllers();
+
+builder.Services.AddFluentValidation(fv =>
+{
+    fv.RegisterValidatorsFromAssemblyContaining<GestaoDeRH.Dominio.Validators.ColaboradorValidator>();
+});
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
