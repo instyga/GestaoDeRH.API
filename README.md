@@ -33,13 +33,14 @@ Certifique-se de que os seguintes requisitos estão instalados em seu ambiente:
 
 1. **Clone o repositório:**
 
-Este comando pode ser copiado através da página do repositório.
-
 Substitua `nome-do-repositorio` pelo nome do seu repositório
 ```bash
 git clone https://github.com/seu-usuario/nome-do-repositorio.git
 cd nome-do-repositorio
 ```
+👍🏻 Este comando pode ser copiado através da página do repositório.
+![URL pela interface do Github](image.png)
+
 
 2. **Restaurar pacotes NuGet:**
 
