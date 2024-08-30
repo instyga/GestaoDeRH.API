@@ -25,7 +25,7 @@ Certifique-se de que os seguintes requisitos estão instalados em seu ambiente:
 
 - [.NET 6 SDK](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)
 - [Entity Framework Core](https://docs.microsoft.com/ef/core/)
-- [Docker](https://docs.microsoft.com/ef/core/)
+- [Docker](https://www.docker.com/products/docker-desktop/)
 - [SqLite](https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/?tabs=net-cli)
 - IDE (Visual Studio, VS Code, Rider, etc.)
 
