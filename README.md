@@ -44,15 +44,25 @@ cd nome-do-repositorio
 
 2. **Restaurar pacotes NuGet:**
 
-No diretório do GestaoDeRh.API, execute:
+No diretório do projeto, execute:
 ```bash
-cd GestaoDeRh.API #acessar o diretório GestaoDeRH.Api a partir do diretório do projeto
 dotnet restore
 ```
 
-3. **Rodar a aplicação:**
+3. **Criar o banco de dados:**
 
-No diretório do GestaoDeRh.API, execute:
+No diretório do `GestaoDeRh.Infrastructure`, execute:
+```bash
+dotnet ef database update
+```
+
+4. **Rodar a aplicação:**
+
+No diretório do `GestaoDeRh.API`, execute:
 ```bash
 dotnet run build
 ```
+
+5. **Acessar a documentação:**
+
+Quando a aplicação estiver rodando, acessar a URL [http://localhost:5086/swagger](http://localhost:5086/swagger/index.html)
