@@ -17,6 +17,8 @@ namespace GestaoDeRH.API.Controllers
             if (novoColaborador.Id > 0)
                 return BadRequest("Novo colaborador não pode conter um ID.");
 
+            //este é um teste
+
             await repositorioColaborador.Salvar(novoColaborador);
             return Ok(novoColaborador);
         }
